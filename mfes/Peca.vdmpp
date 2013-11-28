@@ -11,7 +11,7 @@ instance variables
 
 Tipo: String;
 Força: nat;
-location : loc
+location: loc
 
 operations
 
