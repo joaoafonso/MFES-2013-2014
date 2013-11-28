@@ -1,0 +1,14 @@
+class Jogador
+
+instance variables
+
+Hand: set of Peca;
+
+operations
+
+public Jogador: set of Peca ==> Jogador
+Jogador(ps) == (
+	Hand:= ps;
+);
+
+end Jogador

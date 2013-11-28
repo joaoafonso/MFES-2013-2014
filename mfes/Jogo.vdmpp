@@ -1,0 +1,20 @@
+class Jogo
+
+instance variables
+
+Jogador1: Jogador;
+Jogador2: Jogador;
+Tab: Tabuleiro;
+Turn: nat
+
+operations
+
+public Jogo: Jogador * Jogador * Tabuleiro ==> Jogo
+Jogo(j1, j2, t) == (
+	Jogador1:= j1;
+	Jogador2:= j2;
+	Tab:= t;
+	Turn:= 1
+);
+
+end Jogo

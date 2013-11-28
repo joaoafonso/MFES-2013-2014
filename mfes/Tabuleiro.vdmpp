@@ -1,0 +1,18 @@
+class Tabuleiro
+
+types
+
+public String = seq of char;
+
+instance variables
+
+tab: seq of seq of String;
+
+operations
+
+public Tabuleiro: seq of (seq of String) ==> Tabuleiro
+Tabuleiro(tb) == (
+	tab:= tb;
+);
+
+end Tabuleiro
