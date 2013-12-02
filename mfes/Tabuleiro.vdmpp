@@ -2,17 +2,57 @@ class Tabuleiro
 
 types
 
-public String = seq of char;
+public PieceType = <VAZIO> | <AGUA> | <TOCA> | <TRAP> | <LEAO1> | <RATO1> | <GATO1> | <CAO1> | <LEOPARDO1> | 
+									<LOBO1> | <TIGRE1> | <ELEFANTE1> | <LEAO2> | <RATO2> | <GATO2> | <CAO2> | <LEOPARDO2> | 
+									<LOBO2> | <TIGRE2> | <ELEFANTE2>
 
 instance variables
 
-tab: seq of seq of String;
+private tab: map seq of nat1 to PieceType := {|->};
 
 operations
 
-public Tabuleiro: seq of (seq of String) ==> Tabuleiro
-Tabuleiro(tb) == (
-	tab:= tb;
+public Tabuleiro: ()==> Tabuleiro
+Tabuleiro() == (
+	tab := {
+		[1,1] |-> <LEAO1>, [1,2] |-> <VAZIO>, [1,3] |-> <TRAP>, [1,4] |-> <TOCA>, [1,5] |-> <TRAP>, [1,6] |-> <VAZIO>, [1,7] |-> <TIGRE1>,
+		[2,1] |-> <VAZIO>, [2,2] |-> <CAO1>, [2,3] |-> <VAZIO>, [2,4] |-> <TRAP>, [2,5] |-> <VAZIO>, [2,6] |-> <GATO1>, [2,7] |-> <VAZIO>,
+		[3,1] |-> <RATO1>, [3,2] |-> <VAZIO>, [3,3] |-> <LEOPARDO1>, [3,4] |-> <VAZIO>, [3,5] |-> <LOBO1>, [3,6] |-> <VAZIO>, [3,7] |-> <ELEFANTE1>,
+		[4,1] |-> <VAZIO>, [4,2] |-> <AGUA>, [4,3] |-> <AGUA>, [4,4] |-> <VAZIO>, [4,5] |-> <AGUA>, [4,6] |-> <AGUA>, [4,7] |-> <VAZIO>,
+		[5,1] |-> <VAZIO>, [5,2] |-> <AGUA>, [5,3] |-> <AGUA>, [5,4] |-> <VAZIO>, [5,5] |-> <AGUA>, [5,6] |-> <AGUA>, [5,7] |-> <VAZIO>,
+		[6,1] |-> <VAZIO>, [6,2] |-> <AGUA>, [6,3] |-> <AGUA>, [6,4] |-> <VAZIO>, [6,5] |-> <AGUA>, [6,6] |-> <AGUA>, [6,7] |-> <VAZIO>,
+		[7,1] |-> <ELEFANTE2>, [7,2] |-> <VAZIO>, [7,3] |-> <LOBO2>, [7,4] |-> <VAZIO>, [7,5] |-> <LEOPARDO2>, [7,6] |-> <VAZIO>, [7,7] |-> <RATO2>,
+		[8,1] |-> <VAZIO>, [8,2] |-> <GATO2>, [8,3] |-> <VAZIO>, [8,4] |-> <TRAP>, [8,5] |-> <VAZIO>, [8,6] |-> <CAO2>, [8,7] |-> <VAZIO>,
+		[9,1] |-> <TIGRE2>, [9,2] |-> <VAZIO>, [9,3] |-> <TRAP>, [9,4] |-> <TOCA>, [9,5] |-> <TRAP>, [9,6] |-> <VAZIO>, [9,7] |-> <LEAO2>
+	};
 );
+
+ public reset : () ==> ()
+  reset() ==
+  (
+    tab := {
+		[1,1] |-> <LEAO1>, [1,2] |-> <VAZIO>, [1,3] |-> <TRAP>, [1,4] |-> <TOCA>, [1,5] |-> <TRAP>, [1,6] |-> <VAZIO>, [1,7] |-> <TIGRE1>,
+		[2,1] |-> <VAZIO>, [2,2] |-> <CAO1>, [2,3] |-> <VAZIO>, [2,4] |-> <TRAP>, [2,5] |-> <VAZIO>, [2,6] |-> <GATO1>, [2,7] |-> <VAZIO>,
+		[3,1] |-> <RATO1>, [3,2] |-> <VAZIO>, [3,3] |-> <LEOPARDO1>, [3,4] |-> <VAZIO>, [3,5] |-> <LOBO1>, [3,6] |-> <VAZIO>, [3,7] |-> <ELEFANTE1>,
+		[4,1] |-> <VAZIO>, [4,2] |-> <AGUA>, [4,3] |-> <AGUA>, [4,4] |-> <VAZIO>, [4,5] |-> <AGUA>, [4,6] |-> <AGUA>, [4,7] |-> <VAZIO>,
+		[5,1] |-> <VAZIO>, [5,2] |-> <AGUA>, [5,3] |-> <AGUA>, [5,4] |-> <VAZIO>, [5,5] |-> <AGUA>, [5,6] |-> <AGUA>, [5,7] |-> <VAZIO>,
+		[6,1] |-> <VAZIO>, [6,2] |-> <AGUA>, [6,3] |-> <AGUA>, [6,4] |-> <VAZIO>, [6,5] |-> <AGUA>, [6,6] |-> <AGUA>, [6,7] |-> <VAZIO>,
+		[7,1] |-> <ELEFANTE2>, [7,2] |-> <VAZIO>, [7,3] |-> <LOBO2>, [7,4] |-> <VAZIO>, [7,5] |-> <LEOPARDO2>, [7,6] |-> <VAZIO>, [7,7] |-> <RATO2>,
+		[8,1] |-> <VAZIO>, [8,2] |-> <GATO2>, [8,3] |-> <VAZIO>, [8,4] |-> <TRAP>, [8,5] |-> <VAZIO>, [8,6] |-> <CAO2>, [8,7] |-> <VAZIO>,
+		[9,1] |-> <TIGRE2>, [9,2] |-> <VAZIO>, [9,3] |-> <TRAP>, [9,4] |-> <TOCA>, [9,5] |-> <TRAP>, [9,6] |-> <VAZIO>, [9,7] |-> <LEAO2>
+	};
+  );
+  
+  public getPiece : seq of nat1 ==> PieceType
+  getPiece(coords) ==
+  (
+    return tab(coords);
+  );
+  
+   public getBoard : () ==> map seq of nat1 to PieceType
+  getBoard() ==
+  (
+    return tab;
+  );
 
 end Tabuleiro
