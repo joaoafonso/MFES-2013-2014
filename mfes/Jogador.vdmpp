@@ -1,0 +1,49 @@
+class Jogador
+values
+	public TOTAL_PIECES : nat 8;
+
+instance variables
+	private pieceType : Tabuleiro`PieceType := <RATO1>;
+	private totalPieces : nat := TOTAL_PIECES;
+	private piecesNaoJogadas : nat := TOTAL_PIECES;
+
+	inv pieceType <> <VAZIO>;
+	inv totalPieces >= 0;
+	inv piecesNaoJogadas >= 0;
+
+operations
+
+	-- Perde se ficar sem peças
+	public perdeu : () ==> bool
+	lost() ==
+	(
+		return totalPieces = 0;
+	);
+
+	-- Faz reset às peças do jogador
+	public reset : () ==> ()
+	reset() ==
+	(
+		totalPieces := TOTAL_PIECES;
+		piecesNaoJogadas := TOTAL_PIECES;
+	);
+
+	-- Devolve o tipo de peça
+	public getPieceType : () ==> Tabuleiro`PieceType
+	getPieceType() ==
+	(
+		return pieceType;
+	)
+	pre pieceType <> <VAZIO>;
+
+	-- Decrementa 1 peça ao total de cada vez que é comido
+	public decTotalPieces : () ==> ()
+	decTotalPieces() ==
+	(
+		totalPieces := totalPieces - 1;
+	)
+	pre totalPieces - 1 >= 0;
+
+
+
+end Jogador
