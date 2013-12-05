@@ -11,11 +11,11 @@ inv turn = 1 or turn = 2;
 
 operations
 
-public Jogo: () ==> Jogo
-Jogo() == (
-	jogador1:=  new Jogador(1);
-	jogador2:= new Jogador(2);
-	tabuleiro:= new Tabuleiro();
+public Jogo: Jogador * Jogador * Tabuleiro ==> Jogo
+Jogo(jg1, jg2, tab) == (
+	jogador1:=  jg1;
+	jogador2:= jg2;
+	tabuleiro:= tab;
 	turn:= 1;
 );
 
