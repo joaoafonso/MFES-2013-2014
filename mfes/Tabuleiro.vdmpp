@@ -47,12 +47,106 @@ Tabuleiro() == (
   getPiece(coords) ==
   (
     return tab(coords);
-  );
+  )
+  pre validCoords(coords) and tab <> {|->};
   
    public getBoard : () ==> map seq of nat1 to PieceType
   getBoard() ==
   (
     return tab;
   );
+  
+  public validCoords : seq of nat1 ==> bool
+  validCoords(coord) ==
+  (
+          return coord in set dom tab;
+  )
+  pre len coord = 2;
+  
+  public jogada : seq of nat1 * seq of nat1 ==> ()
+  jogada(origem, destino) ==
+  (
+  	tab:= tab ++ {destino |-> tab(origem)};
+  	tab:= tab ++ {origem |-> <VAZIO>};
+  )
+  pre validCoords(origem) and validCoords(destino) and validaOrigemAnimal(origem) and validaDistancia(origem, destino) and validaMaisForte(origem, destino);
+  
+  public validaOrigemAnimal : seq of nat1 ==> bool
+  validaOrigemAnimal(origem) ==
+  (
+  	if tab(origem) <> <VAZIO> and tab(origem) <> <AGUA> and tab(origem) <> <TRAP>
+  	then return true
+  	else return false;
+  )
+  pre validCoords(origem);
+ 	
+ 	public validaDistancia : seq of nat1 * seq of nat1 ==> bool
+ 	validaDistancia(origem, destino) ==
+ 	(
+ 		dcl distx : int := origem(1) - destino(1);
+ 		dcl disty : int := origem(2) - destino(2);
+ 		dcl distf : int;
+ 		
+ 		if distx < 0
+ 		then distx := distx * -1;
+ 		
+ 		if disty < 0
+ 		then disty := disty * -1;
+ 		
+ 		distf := distx + disty;
+ 		
+ 		if distf > 1
+ 		then return false;
+ 		
+ 		return true;
+ 	);
+ 	
+ 	public validaMaisForte : seq of nat1 * seq of nat1 ==> bool
+ 	validaMaisForte(origem, destino) ==
+ 	(
+ 		dcl forca1 : seq of PieceType := [<RATO1>,<GATO1>,<LOBO1>,<CAO1>,<LEOPARDO1>,<TIGRE1>,<LEAO1>,<ELEFANTE1>];
+ 		dcl forca2 : seq of PieceType := [<RATO2>,<GATO2>,<LOBO2>,<CAO2>,<LEOPARDO2>,<TIGRE2>,<LEAO2>,<ELEFANTE2>];
+ 		
+ 		dcl indice_origem : nat1;
+		dcl indice_destino : nat1; 	
+		
+		for i = 1 to len forca1 do (
+				if forca1(i) = tab(origem)
+				then indice_origem := i;	
+			); 
+
+ 		for i = 1 to len forca1 do (
+ 			if forca1(i) = tab(destino)
+ 			then indice_destino := i;
+ 		);
+ 		
+ 		for i = 1 to len forca2 do (
+				if forca2(i) = tab(origem)
+				then indice_origem := i;	
+			); 
+
+ 		for i = 1 to len forca2 do (
+ 			if forca2(i) = tab(destino)
+ 			then indice_destino := i;
+ 		);
+ 		
+ 		if tab(origem) = <RATO1> and tab(destino) = <ELEFANTE2>
+ 		then return true;
+ 		
+ 		if tab(origem) = <RATO2> and tab(destino) = <ELEFANTE1>
+ 		then return true;
+ 		
+ 		if tab(origem) = <ELEFANTE1> and tab(destino) = <RATO2>
+ 		then return false;
+ 		
+ 		if tab(origem) = <ELEFANTE2> and tab(destino) = <RATO1>
+ 		then return false;
+ 		
+ 		if indice_origem >= indice_destino
+ 		then return true;
+ 		
+ 		return false;
+ 	);
+ 	
 
 end Tabuleiro
