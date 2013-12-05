@@ -2,19 +2,76 @@ class Jogo
 
 instance variables
 
-Jogador1: Jogador;
-Jogador2: Jogador;
-Tab: Tabuleiro;
-Turn: nat
+private jogador1: Jogador;
+private jogador2: Jogador;
+private tabuleiro: Tabuleiro;
+private turn: nat := 1;
+
+inv turn = 1 or turn = 2;
 
 operations
 
-public Jogo: Jogador * Jogador * Tabuleiro ==> Jogo
-Jogo(j1, j2, t) == (
-	Jogador1:= j1;
-	Jogador2:= j2;
-	Tab:= t;
-	Turn:= 1
+public Jogo: () ==> Jogo
+Jogo() == (
+	jogador1:=  new Jogador(1);
+	jogador2:= new Jogador(2);
+	tabuleiro:= new Tabuleiro();
+	turn:= 1;
+);
+
+public trocaTurn: () ==> ()
+trocaTurn() ==
+(
+	if turn =1
+	then turn := 2;
+	
+	if turn =2
+	then turn := 1;
+)
+post turn = 1 or turn = 2;
+
+public reset: () ==> ()
+reset() ==
+(
+	jogador1:=  new Jogador(1);
+	jogador2:= new Jogador(2);
+	tabuleiro:= new Tabuleiro();
+	turn:= 1;
+)
+post turn = 1;
+
+public jogada: seq of nat1 * seq of nat1 ==> ()
+jogada(origem, destino) ==
+(
+	tabuleiro.jogada(origem, destino);
+	trocaTurn();
+	
+	if turn = 1 and jogador2.VerificaSeTemPeca(tabuleiro.getBoard()(destino))
+	then decrementaPeca(jogador2);
+	
+	if turn = 2 and jogador1.VerificaSeTemPeca(tabuleiro.getBoard()(destino))
+	then decrementaPeca(jogador1);
+)
+pre tabuleiro.validCoords(origem) and tabuleiro.validCoords(destino) and validaTurnJogador(origem);
+
+public validaTurnJogador: seq of nat1 ==> bool
+validaTurnJogador(origem) ==
+(
+	dcl peca: Tabuleiro`PieceType := tabuleiro.getBoard()(origem);
+	
+	if turn = 1
+	then return jogador1.VerificaSeTemPeca(peca);
+	
+	if turn = 2
+	then return jogador2.VerificaSeTemPeca(peca);
+	
+	return false;
+);
+
+public decrementaPeca: Jogador ==> ()
+decrementaPeca(jogador) ==
+(
+	jogador.decTotalPieces();
 );
 
 end Jogo

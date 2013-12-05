@@ -42,7 +42,7 @@ Tabuleiro() == (
 		[9,1] |-> <TIGRE2>, [9,2] |-> <VAZIO>, [9,3] |-> <TRAP>, [9,4] |-> <TOCA>, [9,5] |-> <TRAP>, [9,6] |-> <VAZIO>, [9,7] |-> <LEAO2>
 	};
   );
-  
+  --Devolve peca nas coordenadas recebidas
   public getPiece : seq of nat1 ==> PieceType
   getPiece(coords) ==
   (
@@ -50,12 +50,14 @@ Tabuleiro() == (
   )
   pre validCoords(coords) and tab <> {|->};
   
+  --devolve tabuleiro de jogo
    public getBoard : () ==> map seq of nat1 to PieceType
   getBoard() ==
   (
     return tab;
   );
   
+  --valida as coordenadas
   public validCoords : seq of nat1 ==> bool
   validCoords(coord) ==
   (
@@ -63,6 +65,7 @@ Tabuleiro() == (
   )
   pre len coord = 2;
   
+  --faz uma jogada
   public jogada : seq of nat1 * seq of nat1 ==> ()
   jogada(origem, destino) ==
   (
@@ -71,6 +74,7 @@ Tabuleiro() == (
   )
   pre validCoords(origem) and validCoords(destino) and validaOrigemAnimal(origem) and validaDistancia(origem, destino) and validaMaisForte(origem, destino);
   
+  --verifica se casa seleccionada e um animal
   public validaOrigemAnimal : seq of nat1 ==> bool
   validaOrigemAnimal(origem) ==
   (
@@ -80,6 +84,7 @@ Tabuleiro() == (
   )
   pre validCoords(origem);
  	
+ 
  	public validaDistancia : seq of nat1 * seq of nat1 ==> bool
  	validaDistancia(origem, destino) ==
  	(
@@ -99,13 +104,14 @@ Tabuleiro() == (
  		then return false;
  		
  		return true;
- 	);
+ 	)
+ 	pre validCoords(origem) and validCoords(destino);
  	
  	public validaMaisForte : seq of nat1 * seq of nat1 ==> bool
  	validaMaisForte(origem, destino) ==
  	(
- 		dcl forca1 : seq of PieceType := [<RATO1>,<GATO1>,<LOBO1>,<CAO1>,<LEOPARDO1>,<TIGRE1>,<LEAO1>,<ELEFANTE1>];
- 		dcl forca2 : seq of PieceType := [<RATO2>,<GATO2>,<LOBO2>,<CAO2>,<LEOPARDO2>,<TIGRE2>,<LEAO2>,<ELEFANTE2>];
+ 		dcl forca1 : seq of PieceType := [<VAZIO>,<TOCA>,<TRAP>,<RATO1>,<GATO1>,<LOBO1>,<CAO1>,<LEOPARDO1>,<TIGRE1>,<LEAO1>,<ELEFANTE1>];
+ 		dcl forca2 : seq of PieceType := [<VAZIO>,<TOCA>,<TRAP>,<RATO2>,<GATO2>,<LOBO2>,<CAO2>,<LEOPARDO2>,<TIGRE2>,<LEAO2>,<ELEFANTE2>];
  		
  		dcl indice_origem : nat1;
 		dcl indice_destino : nat1; 	
@@ -146,7 +152,8 @@ Tabuleiro() == (
  		then return true;
  		
  		return false;
- 	);
+ 	)
+ 	pre validCoords(origem) and validCoords(destino);
  	
 
 end Tabuleiro
