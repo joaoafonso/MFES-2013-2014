@@ -110,8 +110,8 @@ Tabuleiro() == (
  	public validaMaisForte : seq of nat1 * seq of nat1 ==> bool
  	validaMaisForte(origem, destino) ==
  	(
- 		dcl forca1 : seq of PieceType := [<VAZIO>,<TOCA>,<TRAP>,<RATO1>,<GATO1>,<LOBO1>,<CAO1>,<LEOPARDO1>,<TIGRE1>,<LEAO1>,<ELEFANTE1>];
- 		dcl forca2 : seq of PieceType := [<VAZIO>,<TOCA>,<TRAP>,<RATO2>,<GATO2>,<LOBO2>,<CAO2>,<LEOPARDO2>,<TIGRE2>,<LEAO2>,<ELEFANTE2>];
+ 		dcl forca1 : seq of PieceType := [<VAZIO>,<TOCA>,<TRAP>,<RATO1>,<GATO1>,<LOBO1>,<CAO1>,<LEOPARDO1>,<TIGRE1>,<LEAO1>,<ELEFANTE1>,<AGUA>];
+ 		dcl forca2 : seq of PieceType := [<VAZIO>,<TOCA>,<TRAP>,<RATO2>,<GATO2>,<LOBO2>,<CAO2>,<LEOPARDO2>,<TIGRE2>,<LEAO2>,<ELEFANTE2>,<AGUA>];
  		
  		dcl indice_origem : nat1;
 		dcl indice_destino : nat1; 	

@@ -5,9 +5,7 @@ instance variables
 private jogador1: Jogador;
 private jogador2: Jogador;
 private tabuleiro: Tabuleiro;
-private turn: nat := 1;
-
-inv turn = 1 or turn = 2;
+private turn: nat;
 
 operations
 
@@ -23,10 +21,8 @@ public trocaTurn: () ==> ()
 trocaTurn() ==
 (
 	if turn =1
-	then turn := 2;
-	
-	if turn =2
-	then turn := 1;
+	then turn := 2
+	else turn :=1;
 )
 post turn = 1 or turn = 2;
 
