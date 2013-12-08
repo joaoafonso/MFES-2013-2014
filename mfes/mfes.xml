@@ -1,0 +1,2054 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "yes"?>
+<XMI xmi.version="1.1" xmlns:UML="org.omg.xmi.namespace.UML">
+  <XMI.header>
+    <XMI.documentation>
+      <XMI.exporter>Jomt XMI writer</XMI.exporter>
+      <XMI.exporterVersion>1.2.0.28</XMI.exporterVersion>
+    </XMI.documentation>
+    <XMI.metamodel xmi.name="UML" xmi.version="1.4"/>
+  </XMI.header>
+  <XMI.content>
+    <UML:Model xmi.id="VDMT00000000000052a3dd14" name="mfes" version="0" unSolvedFlag="false" isRoot="true" isLeaf="false" isAbstract="false" xmlns:UML="org.omg.xmi.namespace.UML">
+      <UML:Namespace.ownedElement>
+        <UML:Class xmi.id="VDMT00000000010052a3dd14" name="Jogo" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="VDMT00000000370052a3dd14" version="0" tag="isClass" value="true">
+              <UML:TaggedValue.modelElement>
+                <UML:ModelElement xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:TaggedValue.modelElement>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+          <UML:Classifier.feature>
+            <UML:Attribute xmi.id="VDMT00000000070052a3dd14" name="turn" version="0" visibility="private" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="private"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="private"/>
+              <UML:StructuralFeature.type>
+                <UML:Classifier xmi.idref="VDMT00000000080052a3dd14"/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+            <UML:Operation xmi.id="VDMT000000000a0052a3dd14" name="reset" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT000000000f0052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT000000000a0052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000100052a3dd14" version="0" tag="postcondition" value="turn+%3D+1">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT000000000a0052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT000000000e0052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT000000000b0052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT000000000a0052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000000c0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT00000000110052a3dd14" name="getTurn" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000140052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000110052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000150052a3dd14" version="0" tag="postcondition" value="turn+%3D+1+or+turn+%3D+2">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000110052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000130052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000120052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000110052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000080052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT00000000160052a3dd14" name="trocaTurn" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000190052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000160052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="VDMT000000001a0052a3dd14" version="0" tag="postcondition" value="turn+%3D+1+or+turn+%3D+2">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000160052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000180052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000170052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000160052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000000c0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT000000001b0052a3dd14" name="jogada" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000220052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT000000001b0052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000230052a3dd14" version="0" tag="precondition" value="tabuleiro.validCoords%28origem%29+and+tabuleiro.validCoords%28destino%29+and+validaTurnJogador%28origem%29">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT000000001b0052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000210052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT000000001c0052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT000000001b0052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000000c0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+                <UML:Parameter xmi.id="VDMT000000001d0052a3dd14" name="origem" version="0" unSolvedFlag="false" kind="in">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT000000001b0052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000001e0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+                <UML:Parameter xmi.id="VDMT00000000200052a3dd14" name="destino" version="0" unSolvedFlag="false" kind="in">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT000000001b0052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000001e0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT00000000240052a3dd14" name="validaTurnJogador" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT000000002a0052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000240052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000290052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000250052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000240052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000260052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+                <UML:Parameter xmi.id="VDMT00000000280052a3dd14" name="origem" version="0" unSolvedFlag="false" kind="in">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000240052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000001e0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT000000002b0052a3dd14" name="decrementaPeca" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT000000002f0052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT000000002b0052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT000000002e0052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT000000002c0052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT000000002b0052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000000c0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+                <UML:Parameter xmi.id="VDMT000000002d0052a3dd14" name="jogador" version="0" unSolvedFlag="false" kind="in">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT000000002b0052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000020052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT00000000300052a3dd14" name="Jogo" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000360052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000300052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000350052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000310052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000300052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000010052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+                <UML:Parameter xmi.id="VDMT00000000320052a3dd14" name="jg1" version="0" unSolvedFlag="false" kind="in">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000300052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000020052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+                <UML:Parameter xmi.id="VDMT00000000330052a3dd14" name="jg2" version="0" unSolvedFlag="false" kind="in">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000300052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000020052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+                <UML:Parameter xmi.id="VDMT00000000340052a3dd14" name="tab" version="0" unSolvedFlag="false" kind="in">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000010052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000300052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000040052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Association xmi.id="VDMT00000000380052a3dd14" name="" version="0" unSolvedFlag="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="VDMT00000000390052a3dd14" name="" version="0" visibility="public" multiplicity="1" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable" aggregation="none" ordering="unordered" navigableType="unspecified navigable" isNavigable="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id="VDMT000000003b0052a3dd14">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="VDMT000000003a0052a3dd14" lowerValue="" upperValue=""/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:AssociationEnd.participant>
+                <UML:Classifier xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:AssociationEnd.participant>
+              <UML:AssociationEnd.association>
+                <UML:Association xmi.idref="VDMT00000000380052a3dd14"/>
+              </UML:AssociationEnd.association>
+              <UML:AssociationEnd.visibility xmi.value="public"/>
+            </UML:AssociationEnd>
+            <UML:AssociationEnd xmi.id="VDMT000000003c0052a3dd14" name="jogador1" version="0" visibility="private" multiplicity="1" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable" aggregation="none" ordering="unordered" navigableType="non navigable" isNavigable="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="private"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="private"/>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id="VDMT000000003e0052a3dd14">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="VDMT000000003d0052a3dd14" lowerValue="" upperValue=""/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:AssociationEnd.participant>
+                <UML:Classifier xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:AssociationEnd.participant>
+              <UML:AssociationEnd.association>
+                <UML:Association xmi.idref="VDMT00000000380052a3dd14"/>
+              </UML:AssociationEnd.association>
+              <UML:AssociationEnd.visibility xmi.value="private"/>
+            </UML:AssociationEnd>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:AssociationEnd xmi.idref="VDMT00000000390052a3dd14"/>
+        <UML:AssociationEnd xmi.idref="VDMT000000003c0052a3dd14"/>
+        <UML:Association xmi.id="VDMT000000003f0052a3dd14" name="" version="0" unSolvedFlag="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="VDMT00000000400052a3dd14" name="" version="0" visibility="public" multiplicity="1" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable" aggregation="none" ordering="unordered" navigableType="unspecified navigable" isNavigable="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id="VDMT00000000420052a3dd14">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="VDMT00000000410052a3dd14" lowerValue="" upperValue=""/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:AssociationEnd.participant>
+                <UML:Classifier xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:AssociationEnd.participant>
+              <UML:AssociationEnd.association>
+                <UML:Association xmi.idref="VDMT000000003f0052a3dd14"/>
+              </UML:AssociationEnd.association>
+              <UML:AssociationEnd.visibility xmi.value="public"/>
+            </UML:AssociationEnd>
+            <UML:AssociationEnd xmi.id="VDMT00000000430052a3dd14" name="jogador2" version="0" visibility="private" multiplicity="1" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable" aggregation="none" ordering="unordered" navigableType="non navigable" isNavigable="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="private"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="private"/>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id="VDMT00000000450052a3dd14">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="VDMT00000000440052a3dd14" lowerValue="" upperValue=""/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:AssociationEnd.participant>
+                <UML:Classifier xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:AssociationEnd.participant>
+              <UML:AssociationEnd.association>
+                <UML:Association xmi.idref="VDMT000000003f0052a3dd14"/>
+              </UML:AssociationEnd.association>
+              <UML:AssociationEnd.visibility xmi.value="private"/>
+            </UML:AssociationEnd>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:AssociationEnd xmi.idref="VDMT00000000400052a3dd14"/>
+        <UML:AssociationEnd xmi.idref="VDMT00000000430052a3dd14"/>
+        <UML:Association xmi.id="VDMT00000000460052a3dd14" name="" version="0" unSolvedFlag="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="VDMT00000000470052a3dd14" name="" version="0" visibility="public" multiplicity="1" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable" aggregation="none" ordering="unordered" navigableType="unspecified navigable" isNavigable="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id="VDMT00000000490052a3dd14">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="VDMT00000000480052a3dd14" lowerValue="" upperValue=""/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:AssociationEnd.participant>
+                <UML:Classifier xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:AssociationEnd.participant>
+              <UML:AssociationEnd.association>
+                <UML:Association xmi.idref="VDMT00000000460052a3dd14"/>
+              </UML:AssociationEnd.association>
+              <UML:AssociationEnd.visibility xmi.value="public"/>
+            </UML:AssociationEnd>
+            <UML:AssociationEnd xmi.id="VDMT000000004a0052a3dd14" name="tabuleiro" version="0" visibility="private" multiplicity="1" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable" aggregation="none" ordering="unordered" navigableType="non navigable" isNavigable="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="private"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000010052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="private"/>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id="VDMT000000004c0052a3dd14">
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id="VDMT000000004b0052a3dd14" lowerValue="" upperValue=""/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:AssociationEnd.participant>
+                <UML:Classifier xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:AssociationEnd.participant>
+              <UML:AssociationEnd.association>
+                <UML:Association xmi.idref="VDMT00000000460052a3dd14"/>
+              </UML:AssociationEnd.association>
+              <UML:AssociationEnd.visibility xmi.value="private"/>
+            </UML:AssociationEnd>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:AssociationEnd xmi.idref="VDMT00000000470052a3dd14"/>
+        <UML:AssociationEnd xmi.idref="VDMT000000004a0052a3dd14"/>
+        <UML:Class xmi.id="VDMT00000000020052a3dd14" name="Jogador" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="VDMT00000000760052a3dd14" version="0" tag="isClass" value="true">
+              <UML:TaggedValue.modelElement>
+                <UML:ModelElement xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:TaggedValue.modelElement>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+          <UML:Classifier.feature>
+            <UML:Attribute xmi.id="VDMT000000004d0052a3dd14" name="pecas" version="0" visibility="private" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="private"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="private"/>
+              <UML:StructuralFeature.type>
+                <UML:Classifier xmi.idref="VDMT000000004e0052a3dd14"/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+            <UML:Attribute xmi.id="VDMT00000000500052a3dd14" name="totalPieces" version="0" visibility="private" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="private"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="private"/>
+              <UML:StructuralFeature.type>
+                <UML:Classifier xmi.idref="VDMT00000000080052a3dd14"/>
+              </UML:StructuralFeature.type>
+              <UML:Attribute.initialValue>
+                <UML:Expression xmi.id="VDMT00000000510052a3dd14">
+                  <UML:Expression.body>TOTAL_PIECES</UML:Expression.body>
+                </UML:Expression>
+              </UML:Attribute.initialValue>
+            </UML:Attribute>
+            <UML:Attribute xmi.id="VDMT00000000520052a3dd14" name="TOTAL_PIECES" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="frozen">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:StructuralFeature.type>
+                <UML:Classifier xmi.idref="VDMT00000000080052a3dd14"/>
+              </UML:StructuralFeature.type>
+              <UML:Attribute.initialValue>
+                <UML:Expression xmi.id="VDMT00000000530052a3dd14">
+                  <UML:Expression.body>8</UML:Expression.body>
+                </UML:Expression>
+              </UML:Attribute.initialValue>
+            </UML:Attribute>
+            <UML:Operation xmi.id="VDMT00000000540052a3dd14" name="perdeu" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000570052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000540052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000560052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000550052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000020052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000540052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000260052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT00000000580052a3dd14" name="Jogador" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT000000005e0052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000580052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="VDMT000000005f0052a3dd14" version="0" tag="precondition" value="tipo+%3D+1+or+tipo+%3D+2">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000580052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000600052a3dd14" version="0" tag="postcondition" value="pecas+%3C%3E+%7B%7D">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000580052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT000000005d0052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000590052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000020052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000580052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000020052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+                <UML:Parameter xmi.id="VDMT000000005a0052a3dd14" name="tipo" version="0" unSolvedFlag="false" kind="in">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000020052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000580052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000005b0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT00000000610052a3dd14" name="getPecas" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000640052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000610052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000630052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000620052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000020052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000610052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000080052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT00000000650052a3dd14" name="resetPecas" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000680052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000650052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000690052a3dd14" version="0" tag="postcondition" value="totalPieces+%3D+TOTAL_PIECES">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000650052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000670052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000660052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000020052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000650052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000000c0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT000000006a0052a3dd14" name="decTotalPieces" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT000000006d0052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT000000006a0052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="VDMT000000006e0052a3dd14" version="0" tag="precondition" value="totalPieces+-+1+%3E%3D+0">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT000000006a0052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT000000006c0052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT000000006b0052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000020052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT000000006a0052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000000c0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT000000006f0052a3dd14" name="VerificaSeTemPeca" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000750052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT000000006f0052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000740052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000020052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000700052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000020052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT000000006f0052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000260052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+                <UML:Parameter xmi.id="VDMT00000000710052a3dd14" name="peca" version="0" unSolvedFlag="false" kind="in">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000020052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT000000006f0052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000720052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Class xmi.id="VDMT00000000030052a3dd14" name="TestJogo" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="VDMT00000000850052a3dd14" version="0" tag="isClass" value="true">
+              <UML:TaggedValue.modelElement>
+                <UML:ModelElement xmi.idref="VDMT00000000030052a3dd14"/>
+              </UML:TaggedValue.modelElement>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+          <UML:Classifier.feature>
+            <UML:Operation xmi.id="VDMT00000000770052a3dd14" name="TestJogada" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000030052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT000000007a0052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000770052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000790052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000030052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000780052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000030052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000770052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000000c0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT000000007b0052a3dd14" name="AssertTrue" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000030052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT000000007f0052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT000000007b0052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000800052a3dd14" version="0" tag="precondition" value="a">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT000000007b0052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT000000007e0052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000030052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT000000007c0052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000030052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT000000007b0052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000000c0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+                <UML:Parameter xmi.id="VDMT000000007d0052a3dd14" name="a" version="0" unSolvedFlag="false" kind="in">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000030052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT000000007b0052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000260052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT00000000810052a3dd14" name="TestTrocaTurn" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000030052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000840052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000810052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000830052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000030052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000820052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000030052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000810052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000000c0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Class xmi.id="VDMT00000000040052a3dd14" name="Tabuleiro" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="VDMT00000000bf0052a3dd14" version="0" tag="isClass" value="true">
+              <UML:TaggedValue.modelElement>
+                <UML:ModelElement xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:TaggedValue.modelElement>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+          <UML:Classifier.feature>
+            <UML:Attribute xmi.id="VDMT00000000860052a3dd14" name="tab" version="0" visibility="private" unSolvedFlag="false" ownerScope="instance" targetScope="instance" changeability="changeable">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="private"/>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="private"/>
+              <UML:StructuralFeature.type>
+                <UML:Classifier xmi.idref="VDMT00000000870052a3dd14"/>
+              </UML:StructuralFeature.type>
+              <UML:Attribute.initialValue>
+                <UML:Expression xmi.id="VDMT00000000890052a3dd14">
+                  <UML:Expression.body>{|-&gt;}</UML:Expression.body>
+                </UML:Expression>
+              </UML:Attribute.initialValue>
+            </UML:Attribute>
+            <UML:Operation xmi.id="VDMT000000008a0052a3dd14" name="reset" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT000000008d0052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT000000008a0052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT000000008c0052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT000000008b0052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT000000008a0052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000000c0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT000000008e0052a3dd14" name="getBoard" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000910052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT000000008e0052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000900052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT000000008f0052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT000000008e0052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000870052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT00000000920052a3dd14" name="Tabuleiro" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000950052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000920052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000940052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000930052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000920052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000040052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT00000000960052a3dd14" name="getPiece" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT000000009c0052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000960052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="VDMT000000009d0052a3dd14" version="0" tag="precondition" value="validCoords%28coords%29+and+tab+%3C%3E+%7B%7C-%3E%7D">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000960052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT000000009b0052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000970052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000960052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000980052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+                <UML:Parameter xmi.id="VDMT000000009a0052a3dd14" name="coords" version="0" unSolvedFlag="false" kind="in">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000960052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000001e0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT000000009e0052a3dd14" name="jogada" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000a30052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT000000009e0052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000a40052a3dd14" version="0" tag="precondition" value="validCoords%28origem%29+and+validCoords%28destino%29+and+validaOrigemAnimal%28origem%29+and+validaDistancia%28origem%2C+destino%29+and+validaMaisForte%28origem%2C+destino%29">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT000000009e0052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000a20052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT000000009f0052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT000000009e0052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000000c0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+                <UML:Parameter xmi.id="VDMT00000000a00052a3dd14" name="origem" version="0" unSolvedFlag="false" kind="in">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT000000009e0052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000001e0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+                <UML:Parameter xmi.id="VDMT00000000a10052a3dd14" name="destino" version="0" unSolvedFlag="false" kind="in">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT000000009e0052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000001e0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT00000000a50052a3dd14" name="validCoords" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000a90052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000a50052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000aa0052a3dd14" version="0" tag="precondition" value="len+coord+%3D+2">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000a50052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000a80052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000a60052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000a50052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000260052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+                <UML:Parameter xmi.id="VDMT00000000a70052a3dd14" name="coord" version="0" unSolvedFlag="false" kind="in">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000a50052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000001e0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT00000000ab0052a3dd14" name="validaOrigemAnimal" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000af0052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000ab0052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000b00052a3dd14" version="0" tag="precondition" value="validCoords%28origem%29">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000ab0052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000ae0052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000ac0052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000ab0052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000260052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+                <UML:Parameter xmi.id="VDMT00000000ad0052a3dd14" name="origem" version="0" unSolvedFlag="false" kind="in">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000ab0052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000001e0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT00000000b10052a3dd14" name="validaDistancia" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000b60052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000b10052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000b70052a3dd14" version="0" tag="precondition" value="validCoords%28origem%29+and+validCoords%28destino%29">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000b10052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000b50052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000b20052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000b10052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000260052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+                <UML:Parameter xmi.id="VDMT00000000b30052a3dd14" name="origem" version="0" unSolvedFlag="false" kind="in">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000b10052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000001e0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+                <UML:Parameter xmi.id="VDMT00000000b40052a3dd14" name="destino" version="0" unSolvedFlag="false" kind="in">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000b10052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000001e0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT00000000b80052a3dd14" name="validaMaisForte" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000bd0052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000b80052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000be0052a3dd14" version="0" tag="precondition" value="validCoords%28origem%29+and+validCoords%28destino%29">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000b80052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000bc0052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000040052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000b90052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000b80052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000260052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+                <UML:Parameter xmi.id="VDMT00000000ba0052a3dd14" name="origem" version="0" unSolvedFlag="false" kind="in">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000b80052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000001e0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+                <UML:Parameter xmi.id="VDMT00000000bb0052a3dd14" name="destino" version="0" unSolvedFlag="false" kind="in">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000040052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000b80052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000001e0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Class xmi.id="VDMT00000000050052a3dd14" name="TestJogador" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="VDMT00000000d20052a3dd14" version="0" tag="isClass" value="true">
+              <UML:TaggedValue.modelElement>
+                <UML:ModelElement xmi.idref="VDMT00000000050052a3dd14"/>
+              </UML:TaggedValue.modelElement>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+          <UML:Classifier.feature>
+            <UML:Operation xmi.id="VDMT00000000c00052a3dd14" name="TestPecas" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000050052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000c30052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000c00052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000c20052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000050052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000c10052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000050052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000c00052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000000c0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT00000000c40052a3dd14" name="TestReset" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000050052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000c70052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000c40052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000c60052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000050052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000c50052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000050052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000c40052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000000c0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT00000000c80052a3dd14" name="AssertTrue" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000050052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000cc0052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000c80052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000cd0052a3dd14" version="0" tag="precondition" value="a">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000c80052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000cb0052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000050052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000c90052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000050052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000c80052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000000c0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+                <UML:Parameter xmi.id="VDMT00000000ca0052a3dd14" name="a" version="0" unSolvedFlag="false" kind="in">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000050052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000c80052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000260052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT00000000ce0052a3dd14" name="TestDerrota" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000050052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000d10052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000ce0052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000d00052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000050052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000cf0052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000050052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000ce0052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000000c0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Class xmi.id="VDMT00000000060052a3dd14" name="TestTabuleiro" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="VDMT00000000dd0052a3dd14" version="0" tag="isClass" value="true">
+              <UML:TaggedValue.modelElement>
+                <UML:ModelElement xmi.idref="VDMT00000000060052a3dd14"/>
+              </UML:TaggedValue.modelElement>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+          <UML:Classifier.feature>
+            <UML:Operation xmi.id="VDMT00000000d30052a3dd14" name="TestJogada" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000060052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000d60052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000d30052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000d50052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000060052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000d40052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000060052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000d30052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000000c0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+            <UML:Operation xmi.id="VDMT00000000d70052a3dd14" name="AssertTrue" version="0" visibility="public" unSolvedFlag="false" ownerScope="instance" isQuery="false" concurrency="sequential" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.namespace>
+                <UML:Namespace xmi.idref="VDMT00000000060052a3dd14"/>
+              </UML:ModelElement.namespace>
+              <UML:ModelElement.visibility xmi.value="public"/>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000db0052a3dd14" version="0" tag="deftype" value="expl">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000d70052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+                <UML:TaggedValue xmi.id="VDMT00000000dc0052a3dd14" version="0" tag="precondition" value="a">
+                  <UML:TaggedValue.modelElement>
+                    <UML:ModelElement xmi.idref="VDMT00000000d70052a3dd14"/>
+                  </UML:TaggedValue.modelElement>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:ModelElement.stereotype>
+                <UML:Stereotype xmi.idref="VDMT00000000da0052a3dd14"/>
+              </UML:ModelElement.stereotype>
+              <UML:Feature.owner>
+                <UML:Classifier xmi.idref="VDMT00000000060052a3dd14"/>
+              </UML:Feature.owner>
+              <UML:Feature.visibility xmi.value="public"/>
+              <UML:BehavioralFeature.parameter>
+                <UML:Parameter xmi.id="VDMT00000000d80052a3dd14" name="" version="0" unSolvedFlag="false" kind="return">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000060052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000d70052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT000000000c0052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+                <UML:Parameter xmi.id="VDMT00000000d90052a3dd14" name="a" version="0" unSolvedFlag="false" kind="in">
+                  <UML:ModelElement.namespace>
+                    <UML:Namespace xmi.idref="VDMT00000000060052a3dd14"/>
+                  </UML:ModelElement.namespace>
+                  <UML:ModelElement.visibility xmi.value="public"/>
+                  <UML:Parameter.behavioralFeature>
+                    <UML:BehavioralFeature xmi.idref="VDMT00000000d70052a3dd14"/>
+                  </UML:Parameter.behavioralFeature>
+                  <UML:Parameter.type>
+                    <UML:Classifier xmi.idref="VDMT00000000260052a3dd14"/>
+                  </UML:Parameter.type>
+                </UML:Parameter>
+              </UML:BehavioralFeature.parameter>
+            </UML:Operation>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Class xmi.id="VDMT00000000080052a3dd14" name="nat" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="VDMT00000000090052a3dd14" version="0" tag="isClass" value="false">
+              <UML:TaggedValue.modelElement>
+                <UML:ModelElement xmi.idref="VDMT00000000080052a3dd14"/>
+              </UML:TaggedValue.modelElement>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+        </UML:Class>
+        <UML:Class xmi.id="VDMT00000000260052a3dd14" name="bool" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="VDMT00000000270052a3dd14" version="0" tag="isClass" value="false">
+              <UML:TaggedValue.modelElement>
+                <UML:ModelElement xmi.idref="VDMT00000000260052a3dd14"/>
+              </UML:TaggedValue.modelElement>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+        </UML:Class>
+        <UML:Class xmi.id="VDMT000000005b0052a3dd14" name="nat1" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="VDMT000000005c0052a3dd14" version="0" tag="isClass" value="false">
+              <UML:TaggedValue.modelElement>
+                <UML:ModelElement xmi.idref="VDMT000000005b0052a3dd14"/>
+              </UML:TaggedValue.modelElement>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+        </UML:Class>
+        <UML:Class xmi.id="VDMT000000000c0052a3dd14" name="void" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="VDMT000000000d0052a3dd14" version="0" tag="isClass" value="false">
+              <UML:TaggedValue.modelElement>
+                <UML:ModelElement xmi.idref="VDMT000000000c0052a3dd14"/>
+              </UML:TaggedValue.modelElement>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+        </UML:Class>
+        <UML:Class xmi.id="VDMT00000000980052a3dd14" name="PieceType" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="VDMT00000000990052a3dd14" version="0" tag="isClass" value="false">
+              <UML:TaggedValue.modelElement>
+                <UML:ModelElement xmi.idref="VDMT00000000980052a3dd14"/>
+              </UML:TaggedValue.modelElement>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+        </UML:Class>
+        <UML:Class xmi.id="VDMT000000001e0052a3dd14" name="seq+of+nat1" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="VDMT000000001f0052a3dd14" version="0" tag="isClass" value="false">
+              <UML:TaggedValue.modelElement>
+                <UML:ModelElement xmi.idref="VDMT000000001e0052a3dd14"/>
+              </UML:TaggedValue.modelElement>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+        </UML:Class>
+        <UML:Class xmi.id="VDMT00000000720052a3dd14" name="Tabuleiro%60PieceType" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="VDMT00000000730052a3dd14" version="0" tag="isClass" value="false">
+              <UML:TaggedValue.modelElement>
+                <UML:ModelElement xmi.idref="VDMT00000000720052a3dd14"/>
+              </UML:TaggedValue.modelElement>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+        </UML:Class>
+        <UML:Class xmi.id="VDMT000000004e0052a3dd14" name="set+of+Tabuleiro%60PieceType" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="VDMT000000004f0052a3dd14" version="0" tag="isClass" value="false">
+              <UML:TaggedValue.modelElement>
+                <UML:ModelElement xmi.idref="VDMT000000004e0052a3dd14"/>
+              </UML:TaggedValue.modelElement>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+        </UML:Class>
+        <UML:Class xmi.id="VDMT00000000870052a3dd14" name="map+seq+of+nat1+to+PieceType" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:ModelElement.namespace>
+            <UML:Namespace xmi.idref="VDMT00000000000052a3dd14"/>
+          </UML:ModelElement.namespace>
+          <UML:ModelElement.visibility xmi.value="public"/>
+          <UML:ModelElement.taggedValue>
+            <UML:TaggedValue xmi.id="VDMT00000000880052a3dd14" version="0" tag="isClass" value="false">
+              <UML:TaggedValue.modelElement>
+                <UML:ModelElement xmi.idref="VDMT00000000870052a3dd14"/>
+              </UML:TaggedValue.modelElement>
+            </UML:TaggedValue>
+          </UML:ModelElement.taggedValue>
+        </UML:Class>
+        <UML:Stereotype xmi.id="VDMT000000000e0052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT000000000a0052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000130052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000110052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000180052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000160052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000210052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT000000001b0052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000290052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000240052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT000000002e0052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT000000002b0052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000350052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000300052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000560052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000540052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT000000005d0052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000580052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000630052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000610052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000670052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000650052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT000000006c0052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT000000006a0052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000740052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT000000006f0052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000790052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000770052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT000000007e0052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT000000007b0052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000830052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000810052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT000000008c0052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT000000008a0052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000900052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT000000008e0052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000940052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000920052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT000000009b0052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000960052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000a20052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT000000009e0052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000a80052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000a50052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000ae0052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000ab0052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000b50052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000b10052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000bc0052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000b80052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000c20052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000c00052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000c60052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000c40052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000cb0052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000c80052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000d00052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000ce0052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000d50052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000d30052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+        <UML:Stereotype xmi.id="VDMT00000000da0052a3dd14" name="operation" version="0" unSolvedFlag="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Operation</UML:Stereotype.baseClass>
+          <UML:Stereotype.extendedElement>
+            <UML:ModelElement xmi.idref="VDMT00000000d70052a3dd14"/>
+          </UML:Stereotype.extendedElement>
+        </UML:Stereotype>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+  </XMI.content>
+</XMI>

@@ -1,0 +1,39 @@
+class TestJogador
+	operations
+	
+		public AssertTrue : bool ==> ()
+		AssertTrue(a) == return 
+		pre a;
+		
+		public TestGoodUsage: () ==> ()
+		TestGoodUsage() ==(
+			dcl p: Jogador := new Jogador(1);
+			
+			AssertTrue(p.perdeu()=false);
+			AssertTrue(p.VerificaSeTemPeca(<LEAO1>)=true);
+			AssertTrue(p.VerificaSeTemPeca(<CAO1>)=true);
+			AssertTrue(p.VerificaSeTemPeca(<GATO1>)=true);
+			AssertTrue(p.VerificaSeTemPeca(<RATO1>)=true);
+			AssertTrue(p.VerificaSeTemPeca(<ELEFANTE1>)=true);
+			AssertTrue(p.VerificaSeTemPeca(<LEOPARDO1>)=true);
+			AssertTrue(p.VerificaSeTemPeca(<TIGRE1>)=true);
+			AssertTrue(p.VerificaSeTemPeca(<LOBO1>)=true);
+			
+		);
+		
+		/*public TestReturnSelected: () ==> ()
+		TestReturnSelected() ==(
+			dcl p: Player := new Player();
+			
+			p.ReturnSelected();
+		);
+		
+		public TestSelect: () ==> ()
+		TestSelect() ==(
+			dcl p: Player := new Player();
+			
+			p.Select(1);
+			p.Select(1);
+		)*/
+		
+end TestJogador

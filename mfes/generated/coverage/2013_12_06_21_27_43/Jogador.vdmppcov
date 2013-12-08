@@ -1,0 +1,59 @@
+class Jogador
+values
+	public TOTAL_PIECES : nat = 8;
+
+instance variables
+	private totalPieces : nat := TOTAL_PIECES;
+	private pecas : set of Tabuleiro`PieceType;
+
+	inv totalPieces >= 0;
+
+
+operations
+
+	public Jogador : nat1 ==> Jogador
+	Jogador(tipo) ==
+	(
+		if tipo = 1
+		then pecas := {<RATO1>,<GATO1>,<LOBO1>,<CAO1>,<LEOPARDO1>,<TIGRE1>,<LEAO1>,<ELEFANTE1>};
+		
+		if tipo = 2
+		then pecas := {<RATO2>,<GATO2>,<LOBO2>,<CAO2>,<LEOPARDO2>,<TIGRE2>,<LEAO2>,<ELEFANTE2>};
+		
+	)
+	pre tipo = 1 or tipo = 2
+	post pecas <> {};
+
+	-- Testa se jogador ainda tem pecas, return true se jogador perdeu
+	public perdeu : () ==> bool
+	perdeu() ==
+	(
+		return totalPieces = 0;
+	);
+
+	-- Faz reset as pecas do jogador
+	public resetPecas : () ==> ()
+	resetPecas() ==
+	(
+		totalPieces := TOTAL_PIECES;
+	)
+	post totalPieces = TOTAL_PIECES;
+
+
+	-- Decrementa 1 peca ao total sempre que 1 peca e comida
+	public decTotalPieces : () ==> ()
+	decTotalPieces() ==
+	(
+		totalPieces := totalPieces - 1;
+	)
+	pre totalPieces - 1 >= 0;
+	
+	public VerificaSeTemPeca: Tabuleiro`PieceType ==> bool
+	VerificaSeTemPeca(peca) ==
+	(
+		return peca in set pecas;
+	);
+
+
+
+end Jogador
